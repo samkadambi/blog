@@ -13,6 +13,13 @@ import chefstreet from "../src/images/chefstreet.JPG";
 import food from "../src/images/food.JPG";
 import weirdcafe from "../src/images/weirdcafe.JPG";
 import chefsunset from "../src/images/chefsunset.JPG";
+import bday1 from "../src/images/bday1.jpg"
+import bday2 from "../src/images/bday2.jpg"
+import bday3 from "../src/images/bday3.jpg"
+import bday4 from "../src/images/bday4.jpg"
+import bday5 from "../src/images/bday5.jpg"
+import bday6 from "../src/images/bday6.jpg"
+import bday7 from "../src/images/bday7.jpg"
 import { ReactPhotoCollage } from "react-photo-collage";
 
 
@@ -27,6 +34,22 @@ const morocco_collage = {
     { source: food },
     { source: weirdcafe },
     { source: bluestairs },
+  ],
+  showNumOfRemainingPhotos: true
+};
+
+const bday_collage = {
+  width: '600px',
+  height: ['250px', '170px'],
+  layout: [1, 4],
+  photos: [
+    { source: bday6 },
+    { source: bday5 },
+    { source: bday1 },
+    { source: bday2 },
+    { source: bday3 },
+    { source: bday4 },
+    { source: bday7 },
   ],
   showNumOfRemainingPhotos: true
 };
@@ -86,7 +109,7 @@ function App() {
         iconStyle={{ background: "#e9d35b", color: "green"}}
         icon={<WbSunnyIcon/>}
         >
-          <h1> Maanas has a vaj</h1>
+          <h1> Maanas becomes legal</h1>
           <Popup trigger={<button className="button"> click for a milli </button>} 
           modal
           nested
@@ -99,10 +122,21 @@ function App() {
                 <div className="header"> BRUH </div>
                 <div className="content">
                   {' '}
-                  EPIC BRUH MOMENT
+                  Wow, here we are. The big 21. 21 revolutions around the globe, 21 opportunities to be grateful for all the blessings that have fallen in my lap each year. Oh, and 21 years of being the undisputed GOAT. 
+                  Famous street poet Aubrey "Drake" Graham once asked a rather profound question: "21, can you do sum' for me?" Like Drizzy, I too wonder what 21 has in store.
+                  I guess one thing is I got to throw an absolute rager at a crib that wasn't even mine. Another would be that I got to drink an alcoholic beverage for the first time! Who knew it could be so exhilarating?
+                  Jokes aside, what lies ahead in my script breeds a lot of excitement and a tinge of uncertainty. 
+                  In less than a week I catch a flight to a foreign country whose language and culture I have a pretty basic understanding of. 
+                  It's still so crazy to think about- a whole semester and then some away from home, I really do feel like a bird leaving its nest for the first time. But experiences like these are necessary for 
+                  personal growth, almost as necessary as the ability to rizz up baddies- a skill in which I have plenty of room for improvement.
+
                 </div>
-                <img src={img} alt="bruh"/>
-              </div>
+                <ReactPhotoCollage {...bday_collage} />
+                {/* tried to put a video, didnt work, is cut off */}
+                {/* <video width="400" controls autoplay>
+                  <source src="../src/images/RAGER.MOV" type="video/mp4"/>
+                </video> */}
+              </div> 
             )}
           </Popup>
         </VerticalTimelineElement>
