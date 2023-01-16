@@ -21,7 +21,8 @@ import bday5 from "../src/images/bday5.jpg"
 import bday6 from "../src/images/bday6.jpg"
 import bday7 from "../src/images/bday7.jpg"
 import { ReactPhotoCollage } from "react-photo-collage";
-
+import Button from '@mui/material/Button';
+import NightlifeIcon from '@mui/icons-material/Nightlife';
 
 const morocco_collage = {
   width: '600px',
@@ -75,11 +76,11 @@ function App() {
         <VerticalTimelineElement
         className="Samarth-Morocco"
         date="Dec. 2022 - Jan. 2023"
-        iconStyle={{ background: "#e9d35b", color: "green"}}
+        iconStyle={{ background: "white", color: "orange"}}
         icon={<WbSunnyIcon/>}
         >
           <h1>Samarth ran up morocco</h1>
-          <Popup trigger={<button className="button"> Morocco </button>} 
+          <Popup trigger={<Button variant="contained" className="button"> click for a milli </Button>} 
           modal
           nested
           >
@@ -105,12 +106,12 @@ function App() {
 
         <VerticalTimelineElement
         className="Maanas-21st"
-        date="January 2022"
-        iconStyle={{ background: "#e9d35b", color: "green"}}
-        icon={<WbSunnyIcon/>}
+        date="January 14, 2022"
+        iconStyle={{ background: "white", color: "blue"}}
+        icon={<NightlifeIcon/>}
         >
           <h1> Maanas becomes legal</h1>
-          <Popup trigger={<button className="button"> click for a milli </button>} 
+          <Popup trigger={<Button variant="contained" className="button"> click for a milli </Button>} 
           modal
           nested
           >
@@ -119,7 +120,7 @@ function App() {
                 <button className="close" onClick={close}>
                   &times;
                 </button>
-                <div className="header"> BRUH </div>
+                <div className="header"> I'm like that </div>
                 <div className="content">
                   {' '}
                   Wow, here we are. The big 21. 21 revolutions around the globe, 21 opportunities to be grateful for all the blessings that have fallen in my lap each year. Oh, and 21 years of being the undisputed GOAT. 
@@ -147,7 +148,7 @@ function App() {
         icon={<WbSunnyIcon/>}
         >
           <h1> Maanas has a vaj</h1>
-          <Popup trigger={<button className="button"> click for a milli </button>} 
+          <Popup trigger={<Button  variant="contained" className="button"> click for a milli </Button>} 
           modal
           nested
           >
@@ -173,7 +174,7 @@ function App() {
         icon={<WbSunnyIcon/>}
         >
           <h1> Maanas has a vaj</h1>
-          <Popup trigger={<button className="button"> click for a milli </button>} 
+          <Popup trigger={<Button variant="contained" className="button"> click for a milli </Button>} 
           modal
           nested
           >
