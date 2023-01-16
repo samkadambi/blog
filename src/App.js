@@ -104,8 +104,8 @@ function App() {
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
-        className="Samarth-Morocco"
-        date="December 2022"
+        className="Maanas-21st"
+        date="January 2022"
         iconStyle={{ background: "#e9d35b", color: "green"}}
         icon={<WbSunnyIcon/>}
         >
