@@ -7,22 +7,34 @@ import "react-vertical-timeline-component/style.min.css";
 import './App.css';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import img from "../src/images/bruh.jpeg";
-import chef from "../src/images/chef.JPG";
-import bluestairs from "../src/images/bluestairs.JPG";
-import chefstreet from "../src/images/chefstreet.JPG";
-import food from "../src/images/food.JPG";
-import weirdcafe from "../src/images/weirdcafe.JPG";
-import chefsunset from "../src/images/chefsunset.JPG";
-import bday1 from "../src/images/bday1.jpg"
-import bday2 from "../src/images/bday2.jpg"
-import bday3 from "../src/images/bday3.jpg"
-import bday4 from "../src/images/bday4.jpg"
-import bday5 from "../src/images/bday5.jpg"
-import bday6 from "../src/images/bday6.jpg"
-import bday7 from "../src/images/bday7.jpg"
+import chef from "../src/images/SamarthMorocco/chef.JPG";
+import bluestairs from "../src/images/SamarthMorocco/bluestairs.JPG";
+import chefstreet from "../src/images/SamarthMorocco/chefstreet.JPG";
+import food from "../src/images/SamarthMorocco/food.JPG";
+import weirdcafe from "../src/images/SamarthMorocco/weirdcafe.JPG";
+import chefsunset from "../src/images/SamarthMorocco/chefsunset.JPG";
+import bday1 from "../src/images/Maanas21st/bday1.jpg";
+import bday2 from "../src/images/Maanas21st/bday2.jpg";
+import bday3 from "../src/images/Maanas21st/bday3.jpg";
+import bday4 from "../src/images/Maanas21st/bday4.jpg";
+import bday5 from "../src/images/Maanas21st/bday5.jpg";
+import bday6 from "../src/images/Maanas21st/bday6.jpg";
+import bday7 from "../src/images/Maanas21st/bday7.jpg";
+import bday8 from "../src/images/Maanas21st/RAGER.MOV";
+import brussels1 from "../src/images/MaanasBrussels/brussels1.jpg";
+import brussels2 from "../src/images/MaanasBrussels/brussels2.jpg";
+import brussels3 from "../src/images/MaanasBrussels/brussels3.jpg";
+import brussels4 from "../src/images/MaanasBrussels/brussels4.jpg";
+import brussels5 from "../src/images/MaanasBrussels/brussels5.jpg";
+import brussels6 from "../src/images/MaanasBrussels/brussels6.jpg";
+import brussels7 from "../src/images/MaanasBrussels/brussels7.jpg";
+import brussels8 from "../src/images/MaanasBrussels/brussels8.jpg";
+import brussels9 from "../src/images/MaanasBrussels/brussels9.jpg";
+import brussels10 from "../src/images/MaanasBrussels/brussels10.jpg";
 import { ReactPhotoCollage } from "react-photo-collage";
 import Button from '@mui/material/Button';
 import NightlifeIcon from '@mui/icons-material/Nightlife';
+
 
 const morocco_collage = {
   width: '600px',
@@ -51,9 +63,48 @@ const bday_collage = {
     { source: bday3 },
     { source: bday4 },
     { source: bday7 },
+    { source: bday8 },
   ],
   showNumOfRemainingPhotos: true
 };
+
+const brussels_collage = {
+  width: '600px',
+  height: ['250px', '170px'],
+  layout: [1, 4],
+  photos: [
+    { source: brussels1 },
+    { source: brussels2 },
+    { source: brussels3 },
+    { source: brussels4 },
+    { source: brussels5 },
+    { source: brussels6 },
+    { source: brussels7 },
+    { source: brussels8 },
+    { source: brussels9 },
+    { source: brussels10 },
+  ],
+  showNumOfRemainingPhotos: true
+};
+
+const italy_collage = {
+  width: '600px',
+  height: ['250px', '170px'],
+  layout: [1, 4],
+  photos: [
+    { source: bday6 },
+    { source: bday5 },
+    { source: bday1 },
+    { source: bday2 },
+    { source: bday3 },
+    { source: bday4 },
+    { source: bday7 },
+    { source: bday8 },
+  ],
+  showNumOfRemainingPhotos: true
+};
+
+
 
 function App() {
   return (
@@ -106,7 +157,7 @@ function App() {
 
         <VerticalTimelineElement
         className="Maanas-21st"
-        date="January 14, 2022"
+        date="January 14, 2023"
         iconStyle={{ background: "white", color: "blue"}}
         icon={<NightlifeIcon/>}
         >
@@ -127,7 +178,7 @@ function App() {
                   Famous street poet Aubrey "Drake" Graham once asked a rather profound question: "21, can you do sum' for me?" Like Drizzy, I too wonder what 21 has in store.
                   I guess one thing is I got to throw an absolute rager at a crib that wasn't even mine. Another would be that I got to drink an alcoholic beverage for the first time! Who knew it could be so exhilarating?
                   Jokes aside, what lies ahead in my script breeds a lot of excitement and a tinge of uncertainty. 
-                  In less than a week I catch a flight to a foreign country whose language and culture I have a pretty basic understanding of. 
+                  In less than a week I catch a flight to a foreign country whose language and culture I have only a basic understanding of. 
                   It's still so crazy to think about- a whole semester and then some away from home, I really do feel like a bird leaving its nest for the first time. But experiences like these are necessary for 
                   personal growth, almost as necessary as the ability to rizz up baddies- a skill in which I have plenty of room for improvement.
 
@@ -138,6 +189,58 @@ function App() {
                   <source src="../src/images/RAGER.MOV" type="video/mp4"/>
                 </video> */}
               </div> 
+            )}
+          </Popup>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+        className="Samarth-Morocco"
+        date="December 2022"
+        iconStyle={{ background: "#e9d35b", color: "green"}}
+        icon={<WbSunnyIcon/>}
+        >
+          <h1> Maanas has a vaj</h1>
+          <Popup trigger={<Button  variant="contained" className="button"> click for a milli </Button>} 
+          modal
+          nested
+          >
+            {close => (
+              <div className="modal">
+                <button className="close" onClick={close}>
+                  &times;
+                </button>
+                <div className="header"> BRUH </div>
+                <div className="content">
+                  {' '}
+                  EPIC BRUH MOMENT
+                </div>
+                <img src={img} alt="bruh"/>
+              </div>
+            )}
+          </Popup>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+        className="Samarth-Morocco"
+        date="December 2022"
+        iconStyle={{ background: "#e9d35b", color: "green"}}
+        icon={<WbSunnyIcon/>}
+        >
+          <h1> Maanas has a vaj</h1>
+          <Popup trigger={<Button variant="contained" className="button"> click for a milli </Button>} 
+          modal
+          nested
+          >
+            {close => (
+              <div className="modal">
+                <button className="close" onClick={close}>
+                  &times;
+                </button>
+                <div className="header"> BRUH </div>
+                <div className="content">
+                  {' '}
+                  EPIC BRUH MOMENT
+                </div>
+                <img src={img} alt="bruh"/>
+              </div>
             )}
           </Popup>
         </VerticalTimelineElement>
