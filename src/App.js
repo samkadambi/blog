@@ -141,58 +141,6 @@ function App() {
             )}
           </Popup>
         </VerticalTimelineElement>
-        <VerticalTimelineElement
-        className="Samarth-Morocco"
-        date="December 2022"
-        iconStyle={{ background: "#e9d35b", color: "green"}}
-        icon={<WbSunnyIcon/>}
-        >
-          <h1> Maanas has a vaj</h1>
-          <Popup trigger={<Button  variant="contained" className="button"> click for a milli </Button>} 
-          modal
-          nested
-          >
-            {close => (
-              <div className="modal">
-                <button className="close" onClick={close}>
-                  &times;
-                </button>
-                <div className="header"> BRUH </div>
-                <div className="content">
-                  {' '}
-                  EPIC BRUH MOMENT
-                </div>
-                <img src={img} alt="bruh"/>
-              </div>
-            )}
-          </Popup>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-        className="Samarth-Morocco"
-        date="December 2022"
-        iconStyle={{ background: "#e9d35b", color: "green"}}
-        icon={<WbSunnyIcon/>}
-        >
-          <h1> Maanas has a vaj</h1>
-          <Popup trigger={<Button variant="contained" className="button"> click for a milli </Button>} 
-          modal
-          nested
-          >
-            {close => (
-              <div className="modal">
-                <button className="close" onClick={close}>
-                  &times;
-                </button>
-                <div className="header"> BRUH </div>
-                <div className="content">
-                  {' '}
-                  EPIC BRUH MOMENT
-                </div>
-                <img src={img} alt="bruh"/>
-              </div>
-            )}
-          </Popup>
-        </VerticalTimelineElement>
       </VerticalTimeline>
       </div >
     </div>
