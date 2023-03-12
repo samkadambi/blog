@@ -4,6 +4,7 @@ import "reactjs-popup/dist/index.css";
 import {VerticalTimeline} from "react-vertical-timeline-component";
 import {VerticalTimelineElement} from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import ParticleBackground from 'react-particle-backgrounds';
 import './App.css';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import img from "../src/images/bruh.jpeg";
@@ -173,7 +174,25 @@ const spain_collage = {
 }
 
 
+
 function App() {
+  const settings = {
+      particle: {
+        particleCount: 35,
+        color: "#fff",
+        minSize: 1,
+        maxSize: 4
+      },
+      velocity: {
+        minSpeed: 0.2,
+        maxSpeed: 0.4
+      },
+      opacity: {
+        minOpacity: 0,
+        maxOpacity: 0.6,
+        opacityTransitionTime: 10000
+      }
+  }
   return (
         <div class="area" >
             <ul class="circles">

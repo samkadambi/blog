@@ -105,7 +105,6 @@ body {
   width: 100%;
   height: 100vh;
 
-
 }
 
 .circles {
@@ -113,7 +112,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 165%;
   overflow: hidden;
 }
 
@@ -122,9 +121,9 @@ body {
   display: block;
   list-style: none;
   width: 20px;
-  height: 20px;
+  height: 50px;
   background: rgba(255, 255, 255, 0.2);
-  animation: animate 25s linear infinite;
+  animation: animate 50s linear infinite;
   bottom: -150px;
 
 }
