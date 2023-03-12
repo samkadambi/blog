@@ -38,6 +38,23 @@ import club from "../src/images/Spain/club.jpeg";
 import lisbon from "../src/images/Spain/lisbon.jpeg";
 import madrid from "../src/images/Spain/madrid.jpeg";
 import strat from "../src/images/Spain/strat.jpeg";
+import italy1 from "../src/images/MaanasItaly/italy1.jpg";
+import italy2 from "../src/images/MaanasItaly/italy2.jpg";
+import italy3 from "../src/images/MaanasItaly/italy3.jpg";
+import italy4 from "../src/images/MaanasItaly/italy4.jpg";
+import italy5 from "../src/images/MaanasItaly/italy5.jpg";
+import italy6 from "../src/images/MaanasItaly/italy6.jpg";
+import germany1 from "../src/images/MaanasMunich/germany1.jpg";
+import germany2 from "../src/images/MaanasMunich/germany2.jpg";
+import germany3 from "../src/images/MaanasMunich/germany3.jpg";
+import germany4 from "../src/images/MaanasMunich/germany4.jpg";
+import germany5 from "../src/images/MaanasMunich/germany5.jpg";
+import budapest1 from "../src/images/MaanasBudapest/budapest1.jpg"
+import budapest2 from "../src/images/MaanasBudapest/budapest2.jpg"
+import budapest3 from "../src/images/MaanasBudapest/budapest3.jpg"
+import budapest4 from "../src/images/MaanasBudapest/budapest4.MOV"
+import budapest5 from "../src/images/MaanasBudapest/budapest5.jpg"
+import budapest6 from "../src/images/MaanasBudapest/budapest6.jpg"
 import { ReactPhotoCollage } from "react-photo-collage";
 import Button from '@mui/material/Button';
 import NightlifeIcon from '@mui/icons-material/Nightlife';
@@ -100,14 +117,41 @@ const italy_collage = {
   height: ['250px', '170px'],
   layout: [1, 4],
   photos: [
-    { source: bday6 },
-    { source: bday5 },
-    { source: bday1 },
-    { source: bday2 },
-    { source: bday3 },
-    { source: bday4 },
-    { source: bday7 },
-    { source: bday8 },
+    { source: italy1 },
+    { source: italy2 },
+    { source: italy3 },
+    { source: italy4 },
+    { source: italy5 },
+    { source: italy6 },
+  ],
+  showNumOfRemainingPhotos: true
+};
+
+const germany_collage = {
+  width: '600px',
+  height: ['250px', '170px'],
+  layout: [1, 4],
+  photos: [
+    { source: germany1 },
+    { source: germany2 },
+    { source: germany3 },
+    { source: germany4 },
+    { source: germany5 },
+  ],
+  showNumOfRemainingPhotos: true
+};
+
+const budapest_collage = {
+  width: '600px',
+  height: ['250px', '170px'],
+  layout: [1, 4],
+  photos: [
+    { source: budapest1 },
+    { source: budapest2 },
+    { source: budapest3 },
+    { source: budapest4 },
+    { source: budapest5 },
+    { source: budapest6 },
   ],
   showNumOfRemainingPhotos: true
 };
@@ -236,26 +280,16 @@ function App() {
                   {' '}
                   Ah yes, Belgium. The land of waffles, beer, fries, chocolate, and a random statue of a baby that has been pissing 
                   since my parents visited it 25 years ago. And no, I'm not kidding about that last one, just Google the "Mannekin Piss" and
-                  take a look for yourself.
-                  Anyways, to describe my time in Brussels in one word, I'd go with "boolery." We were living in a hostel not too far with a beautiful view of the river Senne just a couple 
-                  minutes away. As soon as we got off the bus and put our bags in the room, we got straight to it. We went to one of the best fry shops in town 
-                  called "Fritland" and the boolery commenced. One of the items on the menu was called the "Mitrailette" which, according to one of the French
-                  students on the trip, meant "AK-47." So, naturally, as one of the few Americans on the trip, I asked for just that. I blessed them with the most
-                  beautiful sentence in Franglais that I could have ever crafted: "Bonsoir monsieur, je voudrais le AK, s'il vous plait." The confused looks I got
-                  were absolutely priceless. Eventually one of them caught on and told me that they ran out of ingredients for that menu item, so I settled for some 
-                  fries with some spicy Samurai sauce. Best I've ever had. Later that same night we went to one of the clubs in town called "La Machine" and the vibes were
-                  instantly there. I heard them playing "Goosebumps" by Travis Scott from outside the club and I rushed in, nobody checking IDs at the front. We stayed until about 3 in the 
-                  morning and were on our way back when further clowning ensued. We came across this awkwardly placed stoplight that was facing the sidewalk, not really serving
+                  take a look for yourself. 
+                  To start off the night, we grabbed some fries, then went to one of the clubs in town called "La Machine" and the vibes were
+                  instantly there. I heard them playing "Goosebumps" by Travis Scott from outside the club and I rushed in, nobody checking IDs at the front. We stayed pretty late 
+                  and were on our way back until we came across this awkwardly placed stoplight that was facing the sidewalk, not really serving
                   much of a purpose. So we decided to give it one. We turned the stoplight towards the street and waited for cars to come rolling through to see
                   if they would fall for it. In the next 5 minutes it was a straight up traffic jam! I don't think I'd laughed harder in my life. The second day consisted of going
                   to different cathedrals and other major tourist attractions including a chocolate museum and that pissing baby I was talking about earlier. Later that night, we went
                   to the one of the biggest bars in Brussels called Delirium. I remember I had purchased a massive stein from a gift shop earlier in the day and thought to myself "Hey, why
                   don't I put this to good use." I took it out and asked them to fill it to the brim with their best beer. The bartenders spoke amongst themselves for a minute and finally 
-                  agreed on filling it up. I don't think I had ever felt more Belgian than I did that night. The rest of the night was a blur but one thing was glued to my mind from the night.
-                  When we got out of the bar, a bunch of the French students sat down in a line and started throwing people over the top of the line, carrying them through.
-                  Just imagine someone crowdsurfing but its over a single file line, and there are multiple peoeple going through this line at the same time. I obviously joined in and took a look
-                  around. Pretty much everyone within a 20m radius had their eyes glued on this rather unconventional tradition, cheering loudly with some even joining in. The next hour or so consisted of the French students initiating the 
-                  Americans by teaching various fight songs and customs, which was an eye-opening experience to say the least. The French really know how to turn up.
+                  agreed on filling it up. I don't think I had ever felt more Belgian than I did that night. 
                   The last day was a bit mellow- we went to the Atomium, which is where the world fair was hosted in the 50s. I also had a dance off with a random drunk dude who was blasting one of my favorite TikTok bangers on his bluetooth speaker,
                   the one that goes "BRRR SKIPPITY DOP DOP DOP DOP DOP YES YES YES YES SKIP SKIPPITY DIP DIPPITY DUBBLA DUBBLA DUBBLA DUBBLA YES YES YES YES"--- if you know, you know. Before long it was time to head back, and all I could think about was how much of a nose dive I took
                   into European culture in a span of just 3 days. I ate and drank like a Belgian, and turned up like a Frenchman. I even got some of the French students to sing "Ramenez la coupe a la maison"
@@ -274,7 +308,7 @@ function App() {
         iconStyle={{ background: "white", color: "blue"}}
         icon={<LocalPizzaIcon/>}
         >
-          <h1> Maanas a munch</h1>
+          <h1> Maanas munches pizza in Italy</h1>
           <Popup trigger={<Button variant="contained" className="button"> click for a milli </Button>} 
           modal
           nested
@@ -287,21 +321,108 @@ function App() {
                 <div className="header"> Ciao! </div>
                 <div className="content">
                   {' '}
-                  
+                  Italia! I got to kill multiple birds with one stone during this trip. 1. Catch up w/ my homegirl Ipsa. 2. Munch on some top tier pizza 3. Cop some new drip
+                  in the fashion capital of the world, Milan. My only regret is not being able to see the Leaning Tower of Pisa or Rome, then I realized those are both on the 
+                  other side of the country, which I realized after I had landed in Milan. Certified bruh moment. Milan is a beautiful city though, and just like literally every
+                  other big city in Europe, there is something to do on every corner. Wandered around various shops and food tasting events, most notably the Dolce and Gabbana home store.
+                  They had this crazy visualizer room and after a couple seconds of being in it I was geeking pretty hard. It was cray cray, if you will. And obviously a weekend in Italy 
+                  wouldn't be right without some clubbing. First one was litty, had a panda bussing it down on the dance floor. Second one was aight, they played "Way Too Sexy" so they made 
+                  up for the fact that they didn't have a dancing panda. Copped a nice trench coat, don't ask where I bought it from. If you need a restaurant reccomendation, hit Piz Milano.
+                  Got to see Lake Como the last day, very scenic and is definitely a great spot to go for a quick reset. 
+                  Think I've touched all the bases on this trip, solid weekend if I do say so myself. This is Maanas, signing off.
                 </div>
-                <img src={img} alt="bruh"/>
+                <ReactPhotoCollage {...italy_collage} />
               </div>
             )}
           </Popup>
         </VerticalTimelineElement>
-
+        <VerticalTimelineElement
+        className="Maanas-Munich"
+        date="February 2023"
+        iconStyle={{ background: "white", color: "blue"}}
+        icon={<AirplanemodeActiveIcon/>}
+        >
+          <h1>Maanas taps into his inner German</h1>
+          <Popup trigger={<Button variant="contained" className="button"> click for a milli </Button>} 
+          modal
+          nested
+          >
+            {close => (
+              <div className="modal">
+                <button className="close" onClick={close}>
+                  &times;
+                </button>
+                <div className="header"> Allemagne </div>
+                <div className="content">
+                  {' '}
+                  Got to cross off Germany from my bucket list, bless up. More importantly, got to see the Allianz Arena in person, which was 
+                  breathtaking. It's a completely different vibe seeing various camera angles of it before a match of Fifa,
+                  and actually seeing in in person. Some of the most magical goals ever scored in the history
+                  of the sport were scored there. Ok sorry, kind of a nerd emoji moment. We did some frolicking around the English Gardens, kinda cute. 
+                  The most German thing we probably did on the trip was go 
+                  to this restaurant called Hofbrauhaus. Hella tables yet finding one took upwards of half an hour. There was an absolutely dripped out
+                  band playing banger after banger while people chowed down and washed their food down with beer. Our group burned through 7 or 8 liters and
+                  some wine as well, not too shabby. We hit this techno club later that night and it was exceedingly mid. I remember asking someone if it's always
+                  this dead in there and they conceded that it in fact is always this dull, after which I deadass fell asleep. First time falling asleep in a club
+                  in my life. The last day was a drastic vibe switch. We went to Dachau, which is the concentration camp which all the other Nazi concentration camps
+                  were modeled after. Walking through the various chambers was a pivotal experience to say the least. I don't think I've had worse chills ever.
+                  With that, it was time to catch the train to Budapest, which was also a pivotal experience, in a completely different way. Until then, this is Maanas,
+                  signing off. 
+            
+                </div>
+                <ReactPhotoCollage {...germany_collage} />
+              </div>
+            )}
+          </Popup>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+        className="Maanas-Budapest"
+        date="February 2023"
+        iconStyle={{ background: "white", color: "blue"}}
+        icon={<AirplanemodeActiveIcon/>}
+        >
+          <h1>Maanas bags in Budapest</h1>
+          <Popup trigger={<Button variant="contained" className="button"> click for a milli </Button>} 
+          modal
+          nested
+          >
+            {close => (
+              <div className="modal">
+                <button className="close" onClick={close}>
+                  &times;
+                </button>
+                <div className="header"> Does Buda wipe Pest or Vice Versa? </div>
+                <div className="content">
+                  {' '}
+                  Hungary. I remember thinking this was the goofiest name for a country ever during history classes 
+                  throughout grade school. Budapest too. Sounds like the name of some exotic species of flies. Anyways,
+                  I had no clue what it was known for until I Googled it on the train ride there, and apparently they're known
+                  for their baths. So that was the first thing we hit. While we are going around one of the whirpools in the baths,
+                  one of my friends sees a girl recording a video of herself on the outside of the whirlpool and says "Maanas, you 
+                  won't go up and crash her video right now." I'm always up for a challenge, so I did just that. I started checking
+                  myself out through her video camera, saying shit like "Damn, I look really good in this." She proceeded to ask me 
+                  if I was American and told me to be American somewhere else. Little did she know, I'm rather persistent. I went around
+                  a couple more times in the whirlpool and we lock eyes each time. Then I go back and asked if she would send me the video
+                  so I could see where I come in. She agrees and we start texting back and forth. Later that night we link at a shisha bar,
+                  one thing leads to another and let's just say the rest of the night was a movie ;) The next day was fun too, got to see the 
+                  more scenic side of Budapest, most notably Buda castle. Finished the night by hitting the Ferris wheel and sipping wine on 
+                  a boat just chillin on the Danube. Easily my favorite place in Europe so far, and for obvious reasons. Caught my flight
+                  back to France the next morning where I met this Korean dude who studied Spanish in college and was fluent, which may or may
+                  not have come in handy for my trip to Spain coming up the following week. Until then, this is Maanas signing off.
+            
+                </div>
+                <ReactPhotoCollage {...budapest_collage} />
+              </div>
+            )}
+          </Popup>
+        </VerticalTimelineElement>
         <VerticalTimelineElement
         className="Samarth-Maanas-Spain"
         date="February 2023"
         iconStyle={{ background: "white", color: "blue"}}
         icon={<AirplanemodeActiveIcon/>}
         >
-          <h1>Spain!</h1>
+          <h1>The rizzlers hit Spain</h1>
           <Popup trigger={<Button variant="contained" className="button"> click for a milli </Button>} 
           modal
           nested
@@ -318,6 +439,14 @@ function App() {
                   We visited some parks, museums, and bars; you know, the touristy shit. Lemme tell you tho, these Europeans stink. I swear they do not shower and just douse themselves in cologne. Imagine mixing straight must with dior sauvage.
                   Another highlight of Madrid was a pub crawl we ventured on. Maanas almost got finessed by a stripper, but I (Sam) saved him. We met a dutch feller, shared a few drinks, and clowned on him a little. We then met up again Barcelona.
                   We saw some old friends, visited the Sagrada Familia, and clubbed again. I also went to Lisbon for a day and half. Pretty chiller city; super hilly, pretty, and all around ferda. Europe was one hell of an experience, and I hope to be back there soon
+
+                  Ok, my turn! Trip was a movie no kizzy. My theme for the Madrid / Barcelona trip was the concept of "flaneur." Wandering around the streets of Spain just does something for the soul. So many compelling street performances
+                  and interesting people at every corner. Speaking of, do you remember the Korean dude who happened to be fluent in Spanish that I met at the Budapest airport? Well, we ended up meeting again in Barcelona and he gave me a tour
+                  around the city. The looks people would give him when he busted out perfect Spanish were perfect, like "I'm off a perc rn this can't be happening." And yes, unfortunately Samarth had to save me from getting caught lackin with 
+                  a stripper who I attempted to bag with some Google Translate rizz. The first red flag is that she knew zero english, should've known. The Dutch dude was the goofiest person I've met in Europe to date. We accused him of getting no girls 
+                  and he instantly whipped out his phone and showed us a video of him getting some sloppy toppy. Like alright buddy, we stand corrected. All in all, Spain was absolutely clownin and I definitely want to come back at some point, possibly to see
+                  the El Clasico live, and not in a bar in Barcelona while wearing a Real Madrid Jersey (yikes).
+            
                 </div>
                 <ReactPhotoCollage {...spain_collage} />
               </div>
